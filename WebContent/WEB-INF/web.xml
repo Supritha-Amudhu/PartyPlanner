@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>PartyPlanner</display-name>
+  <welcome-file-list>
+    <welcome-file>PartyPlanner_Login.html</welcome-file>
+    <welcome-file>PartyPlanner_Login.htm</welcome-file>
+    <welcome-file>PartyPlanner_Login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>servletClass1</servlet-name>
+    <servlet-class>com.atech.partyplanner.UserRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletClass1</servlet-name>
+    <url-pattern>/UserRegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servletClass2</servlet-name>
+    <servlet-class>com.atech.partyplanner.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletClass2</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servletClass3</servlet-name>
+    <servlet-class>com.atech.partyplanner.PartyRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletClass3</servlet-name>
+    <url-pattern>/PartyRegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servletClass4</servlet-name>
+    <servlet-class>com.atech.partyplanner.RegisteredUsersPopulateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletClass4</servlet-name>
+    <url-pattern>/RegisteredUsersPopulateServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
